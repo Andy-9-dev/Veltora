@@ -1,0 +1,98 @@
+/**
+ * AUREVIA ESTATES — NEW COLOR PALETTE REFERENCE
+ * Warm, Prestigious, African Luxury Design System
+ * 
+ * This file serves as a design reference and is not imported into the app.
+ * All these values are defined in :root in src/App.css
+ */
+
+:root {
+  /* BACKGROUNDS & SURFACES */
+  --bg: #FDFAF6;                    /* Warm off-white page background */
+  --surface: #F5EFE6;               /* Warm sand section backgrounds */
+  --surface-raised: #FDFAF6;        /* Same as --bg */
+
+  /* BORDERS */
+  --border: #E2D5C3;                /* Warm taupe for all borders & dividers */
+
+  /* TEXT COLORS */
+  --text-primary: #1C1612;          /* Deep espresso body text */
+  --text-muted: #7A6A57;            /* Warm brown-gray for labels & subtext */
+  --text-disabled: #B5A899;         /* Light warm-gray for disabled states */
+
+  /* ACCENTS — THE HEART OF THE REDESIGN */
+  --accent: #B5892A;                /* ✨ Rich gold for all primary CTAs & highlights */
+  --accent-hover: #9A7220;          /* Darker gold for hover states */
+  --accent-light: #F9F0DC;          /* Pale gold for light backgrounds & icons */
+
+  /* STATUS COLORS (unchanged) */
+  --success: #16a34a;               /* Green for success states */
+  --warning: #d97706;               /* Orange for warnings */
+
+  /* SPACING & SIZING */
+  --radius: 6px;                    /* Default border radius */
+  --radius-card: 10px;              /* Larger radius for prominent cards */
+
+  /* SHADOW (warm, subtle) */
+  --shadow-float: 0 4px 20px rgba(181, 137, 42, 0.10);
+
+  /* ANIMATION */
+  --transition: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/**
+ * DARK THEME COLORS (Footer & Overlays)
+ */
+footer {
+  background-color: #1C1612;        /* Deep espresso */
+}
+
+.legal {
+  background: #150F0A;              /* Darker espresso */
+}
+
+/* Hero & Location overlays use gradients with these colors */
+.hero-overlay,
+.back::after,
+.location-overlay {
+  /* Uses rgba(28, 22, 18, ...) — the RGB of #1C1612 */
+  /* Blends espresso with gold for warm, directional feel */
+}
+
+/**
+ * EXAMPLE USAGE IN COMPONENTS
+ * ==============================
+ *
+ * 1. Gold Accent Button
+ *    background: var(--accent);          // #B5892A
+ *    &:hover { background: var(--accent-hover); }  // #9A7220
+ *
+ * 2. Card with Gold Border on Hover
+ *    border: 1px solid var(--border);    // #E2D5C3
+ *    &:hover { border-color: var(--accent); }  // #B5892A
+ *
+ * 3. Warm Background Section
+ *    background: var(--surface);         // #F5EFE6
+ *
+ * 4. Icon with Gold Accent
+ *    background: var(--accent-light);    // #F9F0DC
+ *    color: var(--accent);               // #B5892A
+ *
+ * 5. Body Text
+ *    color: var(--text-primary);         // #1C1612
+ *
+ * 6. Secondary Text/Labels
+ *    color: var(--text-muted);           // #7A6A57
+ */
+
+/**
+ * TYPOGRAPHY
+ * ===========
+ * 
+ * Body Text:     "Inter", system-ui, sans-serif (400–500 weight)
+ * Headings:      "Playfair Display", Georgia, serif (600–700 weight)
+ * Display Nums:  "Playfair Display" 600 (prices, stats, awards)
+ * Labels/Badges: "Inter" 500 with letter-spacing: 0.08em
+ * 
+ * Import: @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
+ */
